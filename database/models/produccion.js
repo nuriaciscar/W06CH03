@@ -1,7 +1,7 @@
-const {Schema,model} = require ("mongoose");
+const { Schema, model } = require("mongoose");
 
-const produccionSchema= new Schema ({
-    text: {
+const produccionSchema = new Schema({
+  text: {
     type: String,
     required: true,
   },
@@ -11,8 +11,7 @@ const produccionSchema= new Schema ({
     min: 1,
   },
 });
-})
 
 const produccion = model("produccion", produccionSchema);
 
-module.exports= produccionSchema;
+module.exports = produccionSchema;
