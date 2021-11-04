@@ -3,7 +3,7 @@ const things = require("../../database/models/ThingsIKnow");
 
 const router = express.Router();
 
-router.get("/things", async (req, res) => {
+router.get("/", async (req, res) => {
   const thingsKnown = await things.find();
   res.json(thingsKnown);
 });
